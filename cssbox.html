@@ -1,0 +1,110 @@
+
+<!-- cascadign style sheets. -->
+
+<style>
+
+  .Subscribe-button{
+    background-color:rgb(236, 10, 10);
+    color:white;
+    border:none;
+    /* height:30px;
+    /* width:100px; */ 
+    /*instead of setting height and width
+    we can use padding to get a perfect spacing
+    inside the box as per the text inside it. */
+    padding-left:16px;
+    padding-top:10px;
+    padding-right:16px;
+    padding-bottom:10px;
+     /* similar to margin.*/
+    border-radius:2px;
+    cursor:pointer;  
+    vertical-align:top;
+    
+    margin-left:8px;
+   
+    transition:opacity 0.15s;
+    
+  
+  }
+   /* pseudo class. */
+  .Subscribe-button:hover{
+     opacity:0.8;/* 0 to 1 */
+    
+  }
+  .Subscribe-button:active{
+    opacity:0.5;
+  }
+  .Join-button
+  {
+    background-color:white;
+    color:rgb(0, 213, 255);
+    border-color:rgb(0,213,255);
+    border-width:1px;
+    padding-left:16px;
+    padding-top:9px;
+    padding-right:16px;
+    padding-bottom:9px;
+    border-style:solid;
+    border-radius:2px;
+    margin-left:8px;
+    cursor:pointer;
+    transition:background-color 0.15s,color 0.15s;
+    vertical-align:top;
+  }
+  .Join-button:hover{
+    background-color:rgb(0, 213, 255);;
+    color:white;
+  }
+  .Join-button:active{
+    opacity:0.65;
+  }
+  .Tweet-button
+  {
+    background-color:rgb(24, 152, 237);
+    color:white;
+    border-radius:15px;
+    height:30px;
+    width:70px;
+    border:none;
+    font-weight:bold;
+    margin-left:8px;
+    cursor:pointer;
+    transition:box-shadow 0.15s;
+     vertical-align:top;
+  
+  }
+  .Tweet-button:hover{
+    box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+  }
+  .here-button
+  {
+    vertical-align:top;
+    cursor:pointer;
+    padding-left:16px;
+    padding-top:9px;
+    padding-right:16px;
+    padding-bottom:9px;
+    border-width:1px;
+    border-style:solid;
+    background-color:rgb(9, 167, 9);
+    color:white;
+    transition: padding 0.15s;
+    border-color:rgb(9, 167, 9);
+    margin-left:8px;
+  } 
+    .here-button:hover{
+      padding-left:18px;
+      padding-right:18px;
+    }
+    
+
+    
+  }
+  
+  </style>
+  
+  <button class="Subscribe-button">SUBSCRIBE</button>
+  <button class="Join-button">join</button>
+  <button class="Tweet-button">Tweet</button>
+  <button class="here-button">click-here</button>
