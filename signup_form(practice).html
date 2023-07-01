@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signup</title>
+  <style>
+    #signup-form{
+      padding-top:4px;
+      background-color:white;
+      height:486px;
+      width:268px;
+      margin:auto;
+      padding-left:18px;
+      
+      
+    }
+   input{
+    display:block
+    
+
+
+   }
+   body{
+    background-color:#3b3b7d;
+    margin-top:45px;
+    font-family:Arial, Helvetica, sans-serif;
+   
+    
+   
+  
+   }
+   .primary-section{
+    text-align: center;
+    font-weight:bold;
+    padding-right:15px;
+    
+   }
+   
+   .secondary-section input{
+    width:238px;
+    margin-bottom:10px;
+    height:22px;
+    
+   }
+  .secondary-section button{
+    width:242px;
+    height:30px;
+    color:white;
+    background-color:green;
+    border-style:solid;
+    border-color:green;
+    border-radius:5px;
+    margin-top:10px;
+    cursor: pointer;
+    
+    
+  }
+  .secondary-section button:hover{
+     background-color:rgb(23, 138, 23);
+  }
+.secondary-section p{
+  font-size:14px;
+  align-items: center;
+  font-weight:300;
+  line-height:20px;
+ 
+}
+ .secondary-section span{
+  color:rgb(64, 46, 222);
+  font-weight:300;
+ }
+ 
+  </style>
+  </head>
+
+<body>
+  <div id="signup-form">
+    <div class="primary-section">
+      <h2>Sign Up</h2>
+      <p >it's free and only takes a minute</p>
+    </div>
+
+    <div class="secondary-section">
+  <form action="process.php">
+      <label for="firstname">FirstName</label>
+      <input type="text" >
+      <label for="lasttname">LastName</label>
+      <input type="text" >
+      <label for="Email">Email</label>
+      <input type="text" >
+      <label for="Password">Password</label>
+      <input type="text" >
+      <label for="Confirm Password">Confirm Password</label>
+      <input type="text" >   
+      <button type="signup">signup</button>
+      <p>by clicking the signup button you agree to our <span>terms&conditons</span> and <span>privacy policy</span></p>
+    </form>
+  </div>
+  
+   
+  
+ 
+    
+   
+  </div>
+  
+  
+</body>
+</html>
