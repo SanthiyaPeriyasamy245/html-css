@@ -1,0 +1,96 @@
+:root
+{
+  --bg1:rgb(143, 143, 229);
+  --bg2:rgb(84, 184, 209);
+  --bg3:rgb(69, 69, 135);
+  --bg4:rgb(48, 151, 131); 
+  --animation-speed:2s;
+}
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:1.4;
+  margin:0;
+  padding:0;
+  color:#f4f4f4;
+  overflow:hidden;
+ 
+  
+}
+#page-1{background:var(--bg1);}
+#page-2{background:var(--bg2);}
+#page-3{background:var(--bg3);}
+#page-4{background:var(--bg4);}
+
+.page{
+  display:flex;
+  flex-direction:column;
+  height:100vh;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+  padding:0 4rem;
+ 
+  
+}
+/* flex for each page */
+
+
+.page h1{
+  font-size:4rem;
+  line-height: 1.2;
+  margin:1rem;
+}
+.page p{
+  font-size: 1.3rem;
+  
+}
+.btn{
+  display:inline-block;
+  padding: 1rem 2rem;
+  background:#f4f4f4;
+  color:#333;
+  text-decoration:none;
+  margin-top:1rem;
+  font-size:1.1rem;
+  border:none;
+  overflow:hidden;
+  transition:all 0.3s ease-in; 
+}
+.btn:hover{
+  color:#f4f4f4;
+  background:#333;
+
+}
+
+.btn-dark{
+  background:#333;
+  color:white;
+}
+.btn-dark:hover{
+  background:#f4f4f4;
+  color:#333;
+}
+/* animation for each page */
+#page-1 h1{
+  transform:translateY(-1200px);
+  animation:heading var(--animation-speed) forwards ease-in ;
+}
+/* keyframe */
+@keyframes heading{ 
+  to{
+    transform:translateY(0);
+  }
+}
+#page-1 p{
+
+  transform:translateX(-1800px);
+  animation:paragraph var(--animation-speed) forwards ease-in 1.2s;
+}
+@keyframes paragraph{ 
+  to{
+    transform:translateX(0);
+  }
+}
+.video{
+  display:block;
+}

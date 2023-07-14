@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/658008ce6a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>presentation-project</title>
+</head>
+<body>
+  <!-- page-1 -->
+<section id="page-1" class="page page-1">
+  <h1>Welcome To My Presentation</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem vel id porro itaque inventore eos, suscipit ipsam illo totam similique consectetur numquam voluptas nobis vitae laborum consequatur, eaque deleniti dolore. Beatae temporibus, facere laudantium at quod aperiam tempora magni aliquid.</p>
+  <div>
+    <a class="btn btn-dark"href="#page-2"><i class="fa fa-hand-o-right" style="font-size:24px"></i>
+      Next Page</a>
+  </div>
+</section>  
+<section id="page-2" class="page page-2">
+  <h1>page 2</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, tempore iure. Iusto cum officiis reiciendis beatae quisquam quia rem non saepe quae illo. Illum, ab. Debitis illum magni quibusdam provident?</p>
+  <div>
+    <a class="btn btn-dark" href="#page-1"><i class="fa fa-hand-o-right" style="font-size:24px"></i>
+      Previous Page</a>
+      <a class="btn"href="#page-3"><i class="fa fa-hand-o-right" style="font-size:24px"></i>
+        Next Page</a>
+  </div>
+</section>
+<section id="page-3" class="page page-3">
+  <h1>page-3</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, tempore iure. Iusto cum officiis reiciendis beatae quisquam quia rem non saepe quae illo. Illum, ab. Debitis illum magni quibusdam provident?</p>
+  <div>
+  <a class="btn btn-dark"href="#page-2"><i class="fa fa-hand-o-right" style="font-size:24px"></i>
+      Previous Page</a>
+      <a class="btn" href="#page-4"><i class="fa fa-hand-o-right" style="font-size:24px"></i>
+        Next Page</a>
+  </div>
+</section>
+<section id="page-4" class="page page-4">
+  <h1>page-4</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, tempore iure. Iusto cum officiis reiciendis beatae quisquam quia rem non saepe quae illo. Illum, ab. Debitis illum magni quibusdam provident?</p>
+  <div>
+    <a class="btn btn-dark" href="#page-3"><i class="fa fa-hand-o-right" style="font-size:24px"></i>
+      Previous Page</a>
+  </div>
+</section>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script>
+    // Smooth Scrolling
+    $('.btn').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800
+          );
+        }
+      });
+  </script>
+</body>
+</html>
